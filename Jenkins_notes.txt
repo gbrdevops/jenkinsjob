@@ -1,0 +1,36 @@
+New Item:-
+-------------
+1) in jenkins we are creating jenkins jobs. that jobs are different types sometimes i can create build job, sometimes i will create deployment job, sometimes will create pipelines job.
+to create the jenkins job we require new item option
+Manage jenkins:
+-----------
+here any configurations setup will do it from manage jenkins. here we will install the plugins, will create the credentials, will add the users.
+Job:-
+----------
+In jenkins to perform any task we are creating the job. In job we have two types,
+1. build job
+2. deployment job
+in job we have two stages
+1. prebuild 
+2. postbuild
+
+Prebuild:
+-----------
+Prebuild is nothing but before package is creating here we have below stages,
+1. Git
+2. Maven
+3. Sonarqube
+4. docker
+
+Postbuild:
+------------
+In postbuild once the package is created we can use that package to deployment. we have below stages for post build,
+1. artifactory (Nexus) or registry
+2. ansible
+3. Kubernetes
+
+
+Global tool configurations:-
+-------------------------------
+It help you to declare the number of tools, when you are performing the jenkins job based on the requirement you can utilise the tools. one time if we specify the global tool configuration entire jenkins you can utilise. 
+
